@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主頁面</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #video, #photo-preview {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>主頁面</h1>
+  <video id="video" autoplay playsinline></video>
+  <canvas id="photo-preview" width="640" height="480" style="display:none;"></canvas>
+  <div class="buttons">
+    <button id="take-photo">拍照</button>
+    <button id="upload-photo">上傳照片</button>
+    <button id="download-photo">下載照片</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
